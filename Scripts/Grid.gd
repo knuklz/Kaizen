@@ -2,8 +2,8 @@ extends GridContainer
 
 var row = preload("res://GameObjects/row.tscn")
 
-var grid_width: int = 10
-var grid_height: int = 10
+var grid_width: int = 30
+var grid_height: int = 15
 
 # Called when the node enters the scene tree for the first time.
 

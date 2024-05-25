@@ -7,3 +7,7 @@
 script = ExtResource("1_u2sq6")
 
 [node name="GridContainer" parent="." instance=ExtResource("2_fdh6n")]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0

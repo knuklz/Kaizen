@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cqv3dmmml40k0"]
 
-[node name="Node" type="Node"]
-
-[node name="Bloxel" type="ColorRect" parent="."]
+[node name="Bloxel" type="ColorRect"]
+custom_minimum_size = Vector2(32, 32)
+layout_direction = 2
 offset_right = 32.0
 offset_bottom = 32.0
+size_flags_horizontal = 6
+size_flags_vertical = 6

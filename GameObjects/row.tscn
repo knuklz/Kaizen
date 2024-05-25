@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dv02c8gvrci5f"]
 
-[ext_resource type="Script" path="res://GridContainer.gd" id="1_4m4vp"]
+[ext_resource type="Script" path="res://Scripts/GridContainer.gd" id="1_4m4vp"]
 
 [node name="GridContainer" type="GridContainer"]
 anchors_preset = 8

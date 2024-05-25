@@ -4,7 +4,7 @@ extends GridContainer
 @export var grid_height: int
 
 # Import the 'block' item
-var blk = preload("res://bloxel.tscn")
+var blk = preload("res://GameObjects/bloxel.tscn")
 var blk_size: int = 32
 
 
@@ -14,7 +14,7 @@ func _ready():
 	#pass # Replace with function body.
 	columns = grid_width
 	size = Vector2(blk_size*columns,blk_size)
-	for x in range(columns*10):
+	for x in range(columns):
 		var inst = blk.instantiate()
 		#inst.set_size(Vector2(32,32))
 		add_child(inst)

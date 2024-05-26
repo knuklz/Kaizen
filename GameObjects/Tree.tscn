@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://b3dw1bycanbr"]
+
+[ext_resource type="Texture2D" uid="uid://wrqtimi8cxk6" path="res://Sprites/Plant.png" id="1_131i3"]
+[ext_resource type="Script" path="res://Scripts/Tree.gd" id="2_d4iti"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2yfp"]
+atlas = ExtResource("1_131i3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnvt4"]
+atlas = ExtResource("1_131i3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41j5u"]
+atlas = ExtResource("1_131i3")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xojpy"]
+atlas = ExtResource("1_131i3")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l1gh"]
+atlas = ExtResource("1_131i3")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8maid"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2yfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnvt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41j5u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xojpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l1gh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_8maid")
+script = ExtResource("2_d4iti")
